@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baivhav's Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Page Layout */
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+            background-color: #e4e4c4;
+            color: #146056;
+            line-height: 2;
+            padding: 25px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #360909;
+            text-shadow: 2px 2px 5px rgba(17, 91, 101, 0.1);
+        }
+
+        p {
+            color: #350808;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 10px rgba(17, 94, 101, 0.1);
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            color: #601515;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .skill-item {
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: #c2dbeb;
+            border: 1px solid #f0efba;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Project Section */
+        .projects {
+            margin-top: 2rem;
+        }
+
+        .project-item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #93bbc5;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: scale(1.02);
+        }
+
+        .project-item h3 {
+            font-size: 1.5rem;
+            color: #2a4e57;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 2em 0;
+            margin-top: 2rem;
+            color: #74672b;
+        }
+
+        /* Button styles */
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi There! Welcome to My Portfolio</h1>
+        <h3>Take a Look Around!</h3>
+        <p>Linux OS | C & C++ | ML using Python | Chaos Theory Enthusiast</p>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section class="about">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFamU92qPv3aQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1694337159169?e=1740614400&v=beta&t=NmetO0rAaDk6t8io6FWlCbeWileKRS2dbYFBMbx0yU0" alt="DP">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hello! I'm Baivhav Kummar pursuing a Bachelor of Engineering in Computer Science with a major in Artificial Intelligence and Machine Learning from Chandigarh University. My studies have provided me with a strong foundational understanding of a wide range of machine learning models, including those currently in trend. I have developed my own soil property recognition ML model and contributed to ionosphere and solar wind interaction research alongside my professor. My hands-on experience with practical projects has also enabled me to gain proficiency in CircuitLab circuit modeling, circuitry implementation, and electric waveform analysis. Additionally, I have designed and implemented my own van bus model system.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <div class="skill-item">C & C++</div>
+            <div class="skill-item">ML using Python</div>
+            <div class="skill-item">Circuit Lab</div>
+            <div class="skill-item">AR & VR</div>
+            <div class="skill-item">IOT</div>
+            <div class="skill-item">CGCAD</div>
+            <div class="skill-item">MySQL</div>
+            <div class="skill-item">EWF Analysis</div>
+            <div class="skill-item">Diploma in Fine Arts</div>
+            <div class="skill-item">Linux OS in Virtual Machine</div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: Soil Property Analysis CNN model</h3>
+                <p>A soil property analysis model that takes Soil Image, Location, Magnetic Property etc into account to predict presence of minerals, fertility etc .</p>
+                <a href="https://github.com/BaivhavKummar/Project-Models/blob/main/Copy%20of%20Sitadhyaksha.ipynb" class="btn">View Project</a>
+            </div>
+            <br>
+            <div class="project-item">
+                <h3>Project 2: Projection of DPDT switch</h3>
+                <p>A CGCAD 3rd Angle Projection design of Double Pole Double Throw Switch</p>
+                <a href="https://github.com/BaivhavKummar/Project-Models/blob/main/1ST%20ANGLE.pdf" class="btn">View Project</a>
+            </div>
+            <br>
+            <div class="project-item">
+                <h3>Winter of Code 1: Medium Landing Page Clone</h3>
+                <p>Clone of medium landing page.</p>
+                <a href="" class="btn">View Clone</a>   <a href="https://github.com/BaivhavKummar/Winter-of-Code/blob/main/clone4.html" class="btn">View Clone code</a>
+            </div>
+            <br>
+            <div class="project-item">
+                <h3>Winter of Code 2: Portfolio</h3>
+                <p>Portfolio created</p>
+                <a href="https://github.com/BaivhavKummar/Winter-of-Code/blob/main/portfoliocode.html" class="btn">Git Code Link</a>   <a href="http://portfolio.free.nf/?i=1" class="btn">View Portfolio</a>
+            </div>
+            <br>
+            <div class="project-item">
+                <h3>Winter of Code GIT HUB REPOSITORY</h3>
+                <p>repository link is public</p>
+                <a href="https://github.com/BaivhavKummar/Winter-of-Code" class="btn">View Repository</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Baivhav Kummar | Connect with me on <a href="https://www.linkedin.com/in/baivhav-kummar-313405290/">🌐 LinkedIn</a>  <a href="mailto:dkashyap7851@gmail.com">📧 Email</a>  <a href="https://x.com/BaivhavKummar">X Twitter</a>
+        </footer>
+    </footer>
+</body>
+</html>
